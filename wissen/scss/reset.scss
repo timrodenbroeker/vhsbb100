@@ -1,0 +1,16 @@
+body,
+html {
+	margin: 0;
+}
+body {
+	min-width: 100%;
+	min-height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+// RESET
+
+* {
+	box-sizing: border-box;
+}

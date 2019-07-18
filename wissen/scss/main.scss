@@ -1,0 +1,18 @@
+@import 'bootstrapVars';
+@import 'bootstrap';
+@import 'reset';
+@import 'project';
+@import 'fonts';
+@import 'typography';
+@import 'utilities';
+
+section {
+	min-height: 100px;
+	width: 100%;
+	&.sectionFg {
+		background: $fg;
+	}
+}
+
+body {
+}
