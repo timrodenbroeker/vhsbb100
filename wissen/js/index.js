@@ -1,8 +1,8 @@
 var preloader = document.getElementById('preloader');
 
 setTimeout(function() {
-	preloader.classList.remove('visible');
-}, 3000);
+	$('#preloader').fadeOut();
+}, 2200);
 
 $('a[href^="#"]').on('click', function(e) {
 	e.preventDefault();
@@ -21,3 +21,9 @@ $('a[href^="#"]').on('click', function(e) {
 			}
 		);
 });
+
+// $('.gradient').ripples({
+// 	resolution: 512,
+// 	dropRadius: 20, //px
+// 	perturbance: 0.04,
+// });

@@ -1057,7 +1057,7 @@ body {
       color: #f1f1f1;
       line-height: 100%;
       text-align: center;
-      font-family: 'SuisseIntl', Helvetica, Arial, sans-serif;
+      font-family: 'Cormorant', times, serif;
       font-weight: 400; }
 
 img {
@@ -1071,17 +1071,13 @@ body {
   color: #000000;
   background: #f1f1f1; }
 
-.lead {
-  font-size: calc(16px + 0.3vw);
-  line-height: 160%; }
-
 .intro {
   cursor: pointer;
   display: flex;
   align-items: center;
-  min-height: 90vh; }
+  min-height: 100vh; }
   .intro h2.sans {
-    font-size: calc(10px + 1vw); }
+    font-size: calc(10px + 2vw); }
   .intro .sans {
     font-family: 'SuisseIntl', Helvetica, Arial, sans-serif;
     font-weight: 400; }
@@ -1091,9 +1087,9 @@ body {
     letter-spacing: -0.04em !important; }
   .intro .sans {
     font-size: calc(16px + 0.6vw);
-    line-height: 120%; }
+    line-height: 110%; }
   .intro .serif {
-    font-size: calc(40px + 2.8vw);
+    font-size: calc(40px + 5.8vw);
     line-height: 80%; }
     .intro .serif .sans {
       font-size: calc(22px + 2.8vw);
@@ -1137,6 +1133,10 @@ hr {
 
 .spacer {
   height: 100px; }
+
+@media (max-width: 992px) {
+  .spacer {
+    height: 50px; } }
 
 #main {
   position: fixed;
@@ -1188,6 +1188,119 @@ footer #logo {
 
 #intro * {
   color: black !important; }
+
+.text-center {
+  text-align: center; }
+  .text-center * {
+    text-align: center; }
+
+.container-fluid {
+  background: transparent; }
+
+.v {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .v video {
+    max-width: 300px; }
+
+.navArrows {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  pointer-events: none; }
+  .navArrows * {
+    padding: 15px;
+    pointer-events: all;
+    pointer-events: all; }
+
+.gradient {
+  background: linear-gradient(252deg, #275ece, #27ce70, #fd0a0a);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 14s ease infinite;
+  -moz-animation: AnimationName 14s ease infinite;
+  animation: AnimationName 14s ease infinite; }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 58%; }
+  50% {
+    background-position: 100% 43%; }
+  100% {
+    background-position: 0% 58%; } }
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 58%; }
+  50% {
+    background-position: 100% 43%; }
+  100% {
+    background-position: 0% 58%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 58%; }
+  50% {
+    background-position: 100% 43%; }
+  100% {
+    background-position: 0% 58%; } }
+
+#abspann * {
+  color: white; }
+
+.grad_box {
+  background: #333;
+  background: -webkit-linear-gradient(left bottom, #804 10%, #408 30%, #480 50%, #048 70%, #804 90%);
+  background: -moz-linear-gradient(bottom right, #804 10%, #408 30%, #480 50%, #048 70%, #804 90%);
+  background: linear-gradient(to bottom right, #804 10%, #408 30%, #480 50%, #048 70%, #804 90%);
+  background-size: 800%;
+  display: block;
+  min-height: 100vh;
+  width: 100%;
+  -webkit-animation: moving_bg 6s ease infinite;
+  -moz-animation: moving_bg 6s ease infinite;
+  animation: moving_bg 6s ease infinite; }
+
+@-webkit-keyframes moving_bg {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes moving_bg {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes moving_bg {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+.poster {
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.24);
+  margin-bottom: 15px; }
+
+@keyframes introani {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+#intro-visual {
+  animation-name: introani;
+  animation-duration: 6s; }
 
 @font-face {
   font-family: 'SuisseIntl';
@@ -1294,8 +1407,8 @@ h5 {
     font-size: 17px;
     line-height: 160%; }
   p.lead {
-    font-size: 35px;
-    line-height: 145% !important; }
+    font-size: 45px;
+    line-height: 125% !important; }
   h2.lead,
   h3.lead,
   a.lead,

@@ -1,18 +1,25 @@
-<a href="#story">
-	<section class="intro sectionFg" id="intro">
-		<div class="container">
-			<div class="row flex-center-vert">
-				<div class="col-sm-5">
-					<video src="<?php echo($template_intro_videorsc); ?>" autoplay loop></video>
-				</div>
-				<div class="col-sm-5">
+<section class="intro sectionFg" id="intro">
+		<div class="container-fluid" id="intro-visual">
+			<div class="row">
+				<a href="#story">
+				<div class="col-xs-10 col-xs-offset-1 text-center">
 					<?php echo($template_intro_text); ?>
 					<!-- <a href="#kurse" class="intro-kurs">aa</a>
 					<a href="#kurse" class="intro-kurs">aaa</a> -->
 				</div>
+				</a>
 			</div>
+			<a href="#story">
+				<div class="v"><video src="<?php echo($template_intro_videorsc); ?>" autoplay loop></video></div>
+			</a>
 		</div>
-	</section>
+<!-- 		
+	<nav class="navArrows">
+		<a href="/" class="navArrowLeft">LEFT</a>
+		<a href="/" class="navArrowRight">RIGHT</a>
+	</nav> -->
+
+</section>
 </a>
 
 <div class="spacer" id="story"></div>
@@ -85,25 +92,50 @@
 	</div>
 </section>
 
+<!-- <section id="poster">
+	<div class="spacer"></div>
+	
+</section> -->
+
 <div class="spacer"></div>
 <hr>
-<div class="spacer"></div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-10 col-sm-offset-1">
-			<h3 class="claim"><?php echo($template_abspann_claim); ?></h3>
+<section id="abspann" class="gradient">
+
+<div class="spacer"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h3 class="claim"><?php echo($template_abspann_claim); ?></h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<p class="lead"><?php echo($template_abspann_text); ?></p>
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-sm-10 col-sm-offset-1">
-			<p class="lead"><?php echo($template_abspann_text); ?></p>
+
+	<div class="spacer"></div>
+
+	<div class="container">
+		<div class="row">
+				<div class="col-xs-6 col-sm-3">
+					<img class="poster" src="../media/kopffreimachen.jpg">
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img class="poster" src="../media/grundsatzfragen.jpg">
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img class="poster" src="../media/sonnenblumen.jpg">
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img class="poster" src="../media/franken.jpg">
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-
-<div class="spacer"></div>
-
 <footer>
 	<div id="logo">
 		<img src="../media/logo.svg">
