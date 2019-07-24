@@ -1,7 +1,3 @@
 <?php 
-	// WEITERLEITEN 
-
-	?>
-<body>
-	<h1>Hello World</h1>
-</body>
+	// WEITERLEITEN - AUF WAS?
+?>
