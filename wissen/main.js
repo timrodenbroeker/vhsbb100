@@ -18,3 +18,5 @@ $('a[href^="#"]').on('click', function (e) {
 // 	dropRadius: 20, //px
 // 	perturbance: 0.04,
 // });
+
+ScrollReveal().reveal('.sr', {});

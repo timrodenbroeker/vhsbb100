@@ -1084,7 +1084,8 @@ body {
   .intro .serif {
     font-family: 'Cormorant', times, serif;
     font-weight: 600;
-    letter-spacing: -0.04em !important; }
+    letter-spacing: -0.04em !important;
+    margin-bottom: 10px; }
   .intro .sans {
     font-size: calc(16px + 0.6vw);
     line-height: 110%; }
@@ -1202,6 +1203,7 @@ footer #logo {
   display: flex;
   justify-content: center; }
   .v video {
+    width: 40%;
     max-width: 300px; }
 
 .navArrows {
@@ -1289,8 +1291,9 @@ footer #logo {
     background-position: 0% 50%; } }
 
 .poster {
+  display: block;
   box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.24);
-  margin-bottom: 15px; }
+  margin-bottom: 22px; }
 
 @keyframes introani {
   0% {
@@ -1301,6 +1304,25 @@ footer #logo {
 #intro-visual {
   animation-name: introani;
   animation-duration: 6s; }
+
+#toplogo  {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 0; }
+
+#toplogo {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0; }
+  #toplogo img {
+    padding: 15px;
+    width: 100%;
+    max-width: 200px; }
 
 @font-face {
   font-family: 'SuisseIntl';

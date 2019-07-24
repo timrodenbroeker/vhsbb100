@@ -1,4 +1,9 @@
+
+
 <section class="intro sectionFg" id="intro">
+	<!-- <div id="toplogo">
+		<img src="../media/logo_dunkel.svg">
+	</div>	 -->
 		<div class="container-fluid" id="intro-visual">
 			<div class="row">
 				<a href="#story">
@@ -10,7 +15,7 @@
 				</a>
 			</div>
 			<a href="#story">
-				<div class="v"><video src="<?php echo($template_intro_videorsc); ?>" autoplay loop></video></div>
+				<div class="v"><video src="<?php echo($template_intro_videorsc); ?>" autoplay loop muted></video></div>
 			</a>
 		</div>
 <!-- 		
@@ -25,7 +30,7 @@
 <div class="spacer" id="story"></div>
 
 <section class="story">
-	<div class="container">
+	<div class="container sr">
 		
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1">
@@ -42,7 +47,7 @@
 <div class="spacer"></div>
 
 <section class="kurse" id="kurse">
-	<div class="container">
+	<div class="container sr">
 		<div class="row">
 			<div class="col-sm-5 col-sm-offset-1">			
 				<div class="kurs">
@@ -103,10 +108,10 @@
 <section id="abspann" class="gradient">
 
 <div class="spacer"></div>
-	<div class="container">
+	<div class="container sr">
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1">
-				<h3 class="claim"><?php echo($template_abspann_claim); ?></h3>
+				<h3 class="claim" style="font-size: 25px;"><?php echo($template_abspann_claim); ?></h3>
 			</div>
 		</div>
 		<div class="row">
@@ -118,7 +123,7 @@
 
 	<div class="spacer"></div>
 
-	<div class="container">
+	<div class="container sr">
 		<div class="row">
 				<div class="col-xs-6 col-sm-3">
 					<img class="poster" src="../media/kopffreimachen.jpg">
