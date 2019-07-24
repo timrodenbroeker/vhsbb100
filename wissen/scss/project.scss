@@ -3,17 +3,69 @@ $secondary: blue;
 $fg: #d0d6e0;
 $bg: #000000;
 
-$white: #ffffff;
+$white: #f1f1f1;
 
 $spaceDesktop: 100px;
 $spaceMobile: 100px;
 
+#preloader {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	top: 0;
+	left: 0;
+
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 99999999;
+	top: 100vh;
+	transition: top 1s ease;
+	pointer-events: none;
+
+	background: rgb(131, 58, 180);
+	background: linear-gradient(0deg, rgba(8, 0, 148, 1) 0%, rgba(56, 199, 228, 1) 36%, rgba(9, 121, 60, 1) 100%);
+
+	&.visible {
+		top: 0;
+	}
+
+	.preloader-logo {
+		max-width: 900px;
+
+		@keyframes ani {
+			from {
+				transform: scale(0.6);
+			}
+			to {
+				transform: scale(1);
+			}
+		}
+
+		h1 {
+			color: #f1f1f1;
+			line-height: 100%;
+			text-align: center;
+			// font-family: 'Cormorant', times, serif;
+			font-family: 'SuisseIntl', Helvetica, Arial, sans-serif;
+			font-weight: 400;
+		}
+
+		animation-name: ani;
+		animation-duration: 3s;
+	}
+}
+
+img {
+	width: 100%;
+}
 body {
 	font-family: 'SuisseIntl', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 160%;
 	color: #000000;
+	background: #f1f1f1;
 }
 
 .lead {
@@ -22,6 +74,7 @@ body {
 }
 
 .intro {
+	cursor: pointer;
 	h2.sans {
 		font-size: calc(10px + 1vw);
 	}
@@ -38,7 +91,7 @@ body {
 
 	display: flex;
 	align-items: center;
-	min-height: 80vh;
+	min-height: 90vh;
 
 	.sans {
 		font-size: calc(16px + 0.6vw);
@@ -58,6 +111,8 @@ body {
 .claim {
 	font-family: 'Cormorant', times, serif;
 	font-weight: 600;
+	text-align: center;
+	margin-bottom: 25px;
 }
 
 .story .claim {
@@ -75,12 +130,6 @@ body {
 	margin: 0 auto;
 }
 
-.story,
-footer {
-	padding-top: $spaceDesktop;
-	padding-bottom: $spaceDesktop;
-}
-
 video {
 	width: 100%;
 }
@@ -93,4 +142,90 @@ video {
 .intro-kurs {
 	display: inline-block;
 	padding: 15px;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: #aaaaaa;
+	margin: 0;
+}
+
+.spacer {
+	height: $spaceDesktop;
+}
+
+#main {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	#logo {
+		width: 200px;
+		z-index: 99999;
+	}
+}
+
+footer {
+	#logo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 30px 0;
+		img {
+			width: 200px;
+			z-index: 99999;
+			margin: 20px;
+		}
+	}
+}
+
+#ctas {
+	.cta {
+		background: $fg;
+		display: flex;
+		padding: 15px;
+		width: 100%;
+		min-height: 300px;
+		position: relative;
+	}
+}
+
+#intro {
+	position: relative;
+
+	.arrows {
+	}
+}
+
+#kurse {
+	h4 {
+		margin-bottom: 10px;
+	}
+}
+
+.kurs-head {
+	min-height: 110px;
+}
+
+.kurs-desc {
+	margin-bottom: 10px;
+}
+
+.kurs-meta {
+	p {
+		font-family: 'SuisseIntlMono';
+		font-size: 12px;
+	}
+}
+
+#intro {
+	* {
+		color: black !important;
+	}
 }

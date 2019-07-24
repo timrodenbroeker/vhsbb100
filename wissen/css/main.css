@@ -1026,21 +1026,60 @@ body {
 * {
   box-sizing: border-box; }
 
+#preloader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 99999999;
+  top: 100vh;
+  transition: top 1s ease;
+  pointer-events: none;
+  background: #833ab4;
+  background: linear-gradient(0deg, #080094 0%, #38c7e4 36%, #09793c 100%); }
+  #preloader.visible {
+    top: 0; }
+  #preloader .preloader-logo {
+    max-width: 900px;
+    animation-name: ani;
+    animation-duration: 3s; }
+
+@keyframes ani {
+  from {
+    transform: scale(0.6); }
+  to {
+    transform: scale(1); } }
+    #preloader .preloader-logo h1 {
+      color: #f1f1f1;
+      line-height: 100%;
+      text-align: center;
+      font-family: 'SuisseIntl', Helvetica, Arial, sans-serif;
+      font-weight: 400; }
+
+img {
+  width: 100%; }
+
 body {
   font-family: 'SuisseIntl', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 160%;
-  color: #000000; }
+  color: #000000;
+  background: #f1f1f1; }
 
 .lead {
   font-size: calc(16px + 0.3vw);
   line-height: 160%; }
 
 .intro {
+  cursor: pointer;
   display: flex;
   align-items: center;
-  min-height: 80vh; }
+  min-height: 90vh; }
   .intro h2.sans {
     font-size: calc(10px + 1vw); }
   .intro .sans {
@@ -1062,7 +1101,9 @@ body {
 
 .claim {
   font-family: 'Cormorant', times, serif;
-  font-weight: 600; }
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px; }
 
 .story .claim {
   text-align: center; }
@@ -1076,11 +1117,6 @@ body {
   padding: 0 15px;
   margin: 0 auto; }
 
-.story,
-footer {
-  padding-top: 100px;
-  padding-bottom: 100px; }
-
 video {
   width: 100%; }
 
@@ -1092,6 +1128,66 @@ video {
 .intro-kurs {
   display: inline-block;
   padding: 15px; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #aaaaaa;
+  margin: 0; }
+
+.spacer {
+  height: 100px; }
+
+#main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #main #logo {
+    width: 200px;
+    z-index: 99999; }
+
+footer #logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0; }
+  footer #logo img {
+    width: 200px;
+    z-index: 99999;
+    margin: 20px; }
+
+#ctas .cta {
+  background: #d0d6e0;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  min-height: 300px;
+  position: relative; }
+
+#intro {
+  position: relative; }
+
+#kurse h4 {
+  margin-bottom: 10px; }
+
+.kurs-head {
+  min-height: 110px; }
+
+.kurs-desc {
+  margin-bottom: 10px; }
+
+.kurs-meta p {
+  font-family: 'SuisseIntlMono';
+  font-size: 12px; }
+
+#intro * {
+  color: black !important; }
 
 @font-face {
   font-family: 'SuisseIntl';
@@ -1110,6 +1206,12 @@ video {
   /* Legacy iOS */ }
 
 /* cormorant-700 - latin */
+@font-face {
+  font-family: 'SuisseIntlMono';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/SuisseIntlMono-Regular-WebS.eot"), url("../fonts/SuisseIntlMono-Regular-WebS.eot?#iefix") format("embedded-opentype"), url("../fonts/SuisseIntlMono-Regular-WebS.woff2") format("woff2"), url("../fonts/SuisseIntlMono-Regular-WebS.woff") format("woff"), url("../fonts/SuisseIntlMono-Regular-WebS.ttf") format("truetype"); }
+
 h1,
 h2,
 h3,
@@ -1118,6 +1220,88 @@ h5 {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0; }
+
+/* TYPO */
+@media (max-width: 500px) {
+  p,
+  ul,
+  li {
+    font-size: 14px;
+    line-height: 160%; }
+  p.lead {
+    font-size: 18px;
+    line-height: 145% !important; }
+  h2.lead,
+  h3.lead,
+  #mobile-nav a.mobile-nav-item {
+    font-size: 18px;
+    line-height: 119% !important; } }
+
+@media (min-width: 501px) {
+  p,
+  ul,
+  li {
+    font-size: 15px;
+    line-height: 160%; }
+  p {
+    margin: 0; }
+  p.lead {
+    font-size: 19px;
+    line-height: 145% !important; }
+  h2.lead,
+  h3.lead,
+  a.lead,
+  #mobile-nav a.mobile-nav-item {
+    font-size: 19px !important;
+    line-height: 119% !important; } }
+
+@media (min-width: 767px) {
+  p,
+  ul,
+  li {
+    font-size: 16px;
+    line-height: 160%; }
+  p.lead {
+    font-size: 23px;
+    line-height: 145% !important; }
+  h2.lead,
+  h3.lead,
+  a.lead,
+  #mobile-nav a.mobile-nav-item {
+    font-size: 23px !important;
+    line-height: 119% !important; } }
+
+@media (min-width: 900px) {
+  p,
+  ul,
+  li {
+    font-size: 16px;
+    line-height: 160%; }
+  p.lead {
+    font-size: 26px;
+    line-height: 145% !important; }
+  h2.lead,
+  h3.lead,
+  a.lead,
+  #mobile-nav a.mobile-nav-item {
+    font-size: 26px !important;
+    line-height: 119% !important; } }
+
+@media (min-width: 1200px) {
+  p,
+  ul,
+  li {
+    font-size: 17px;
+    line-height: 160%; }
+  p.lead {
+    font-size: 35px;
+    line-height: 145% !important; }
+  h2.lead,
+  h3.lead,
+  a.lead,
+  #mobile-nav a.mobile-nav-item {
+    font-size: 35px !important;
+    line-height: 119% !important; } }
 
 /*
  =========================================

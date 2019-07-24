@@ -74,3 +74,14 @@
 // 		/* Modern Browsers */ url('../fonts/cormorant-v7-latin-700.ttf') format('truetype'),
 // 		/* Safari, Android, iOS */ url('../fonts/cormorant-v7-latin-700.svg#Cormorant') format('svg'); /* Legacy iOS */
 // }
+
+@font-face {
+	font-family: 'SuisseIntlMono';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/SuisseIntlMono-Regular-WebS.eot'),
+		/* IE9 Compat Modes */ url('../fonts/SuisseIntlMono-Regular-WebS.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */ url('../fonts/SuisseIntlMono-Regular-WebS.woff2') format('woff2'),
+		/* Super Modern Browsers */ url('../fonts/SuisseIntlMono-Regular-WebS.woff') format('woff'),
+		/* Modern Browsers */ url('../fonts/SuisseIntlMono-Regular-WebS.ttf') format('truetype');
+}
