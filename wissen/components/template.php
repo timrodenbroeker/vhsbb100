@@ -14,8 +14,11 @@
 				</div>
 				</a>
 			</div>
-			<a href="#story">
-				<div class="v"><video src="<?php echo($template_intro_videorsc); ?>" autoplay loop muted></video></div>
+			<a class="flex-space-between" href="#story">
+			<!-- <div class="k" style="color: #00984F !important; text-align: right;">ROBOTER & ETHIK</div> -->
+				<div class="v" id="v"></div>
+				
+				<!-- <div class="k" style="color: #0D63A9 !important;">SCHWEIZERDEUTSCH KONVERSATION</div> -->
 			</a>
 		</div>
 <!-- 		
@@ -26,7 +29,7 @@
 
 </section>
 </a>
-
+<main id="content">
 <div class="spacer" id="story"></div>
 
 <section class="story">
@@ -42,14 +45,17 @@
 	</div>	
 </section>
 
-<div class="spacer"></div>
+<!-- <div class="spacer"></div>
 <hr>
-<div class="spacer"></div>
+<div class="spacer"></div> -->
 
+<section id="sketch2" style="text-align: center;">
+	
+</section>
 <section class="kurse" id="kurse">
 	<div class="container sr">
 		<div class="row">
-			<div class="col-sm-5 col-sm-offset-1">			
+			<div class="col-sm-5 col-sm-offset-1" style="text-align: right">			
 				<div class="kurs">
 					<div class="kurs-head">
 						<h3 style="color: <?php echo($template_kurs1_hcolor); ?>;" class="lead"><?php echo($template_kurs1_headline); ?></h3>
@@ -124,19 +130,19 @@
 	<div class="spacer"></div>
 
 	<div class="container sr">
-		<div class="row">
-				<div class="col-xs-6 col-sm-3">
+		<div class="row" style="perspective: 100vw;">
+				<a href="#" class="col-xs-6 col-sm-3">
 					<img class="poster" src="../media/kopffreimachen.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
+				</a>
+				<a href="#" class="col-xs-6 col-sm-3">
 					<img class="poster" src="../media/grundsatzfragen.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
+				</a>
+				<a href="#" class="col-xs-6 col-sm-3">
 					<img class="poster" src="../media/sonnenblumen.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
+				</a>
+				<a href="#" class="col-xs-6 col-sm-3">
 					<img class="poster" src="../media/franken.jpg">
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -146,3 +152,5 @@
 		<img src="../media/logo.svg">
 	</div>
 </footer>
+
+</main>

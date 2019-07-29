@@ -1164,7 +1164,6 @@ footer #logo {
     margin: 20px; }
 
 #ctas .cta {
-  background: #d0d6e0;
   display: flex;
   padding: 15px;
   width: 100%;
@@ -1172,7 +1171,17 @@ footer #logo {
   position: relative; }
 
 #intro {
-  position: relative; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #d0d6e0;
+  z-index: 999; }
+
+#content {
+  position: relative;
+  z-index: 9999;
+  margin-top: 90vh;
+  background: #f1f1f1; }
 
 #kurse h4 {
   margin-bottom: 10px; }
@@ -1203,8 +1212,8 @@ footer #logo {
   display: flex;
   justify-content: center; }
   .v video {
-    width: 40%;
-    max-width: 300px; }
+    width: 60%;
+    max-width: 500px; }
 
 .navArrows {
   height: 100vh;
@@ -1293,7 +1302,10 @@ footer #logo {
 .poster {
   display: block;
   box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.24);
-  margin-bottom: 22px; }
+  margin-bottom: 22px;
+  transition: all 1s ease; }
+  .poster:hover {
+    transform: rotateY(33deg) scale(0.8); }
 
 @keyframes introani {
   0% {
@@ -1323,6 +1335,60 @@ footer #logo {
     padding: 15px;
     width: 100%;
     max-width: 200px; }
+
+#v canvas {
+  width: 200px;
+  height: 200px; }
+
+/*
+ =========================================
+ Scrollbar
+ =========================================
+*/
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+  background: transparent;
+  /* background: #cccccc;  */ }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eeeeee; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  z-index: 10 !important;
+  background: #000000;
+  cursor: pointer; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0000; }
+
+.flex-space-between {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.k {
+  flex-basis: 100%;
+  font-size: 20px; }
+
+#v {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s; }
+
+@keyframes example {
+  from {
+    top: 1600px; }
+  to {
+    top: 0px; } }
+
+@media (max-width: 768px) {
+  #sketch2 canvas {
+    display: none; } }
 
 @font-face {
   font-family: 'SuisseIntl';

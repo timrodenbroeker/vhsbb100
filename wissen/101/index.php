@@ -23,7 +23,7 @@
 	// ========================================================== VARIABLEN FÜR KURS1
 	// ====================================================================================================================
 	$template_kurs1_hcolor 				= '#00984F';
-	$template_kurs1_headline 			= '„Roboter & Ethik“';
+	$template_kurs1_headline 			= 'Roboter & Ethik';
 	$template_kurs1_subheadline 		= 'Neue Anforderungen im Zeitalter der künstlichen Intelligenz';
 	$template_kurs1_beschreibungstext 	= 'Die Digitalisierung ermöglicht individualisierte Preise, personalisierte Werbung und Medizin, den Einsatz von Robotern in vielen Arbeitsbereichen, selbstfahrende Autos und Drohnen, Stimm- und Gesichtserkennung. Welche Herausforderungen stellen diese Neuerungen an die Gesellschaft? Wo gibt es Wertekonflikte? Wie sehen die rechtlichen Grundlagen aus? An drei Abenden werden die verschiedenen Aspekte beleuchtet und diskutiert.';
 	$template_kurs1_info1 				= 'Kurs-Nr.: K 140 5030<br/>Kurspreis.: CHF 76.00<br/>';
@@ -32,7 +32,7 @@
 	// ========================================================== VARIABLEN FÜR KURS2
 	// ====================================================================================================================
 	$template_kurs2_hcolor 				= '#0D63A9';
-	$template_kurs2_headline 			= '„Schweizerdeutsch Konversation“';
+	$template_kurs2_headline 			= 'Schweizerdeutsch Konversation';
 	$template_kurs2_subheadline 		= 'Hier steht eine Subline';
 	$template_kurs2_beschreibungstext 	= 'Die Fähigkeit sich zu miteinander zu verständigen ist die Grundlage jeder Gesellschaft. In Schweizerdeutsch Konversation praktizieren und verfeinern wir das, was Sie im Kurs "Schweizerdeutsch verstehen" gelernt haben. Wir versuchen, uns in Alltagssituationen korrekt auszudrücken und beschäftigen uns mit Historischem und Kulturellem in und um Basel. Offen für alle, die Schweizerdeutsch schon verstehen und praktizieren wollen.';
 	$template_kurs2_info1 				= 'Kurs-Nr.: S 134 005<br/>Kurspreis: CHF 459.00<br/>Kursstart: 24.10.2019, 17-mal';

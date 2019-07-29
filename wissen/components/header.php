@@ -8,5 +8,6 @@
 		<script src="../vendor/jquery-3.4.1.min.js"></script>
 		<script src="../vendor/jquery.ripples-min.js"></script>
 		<script src="../vendor/scrollreveal.min.js"></script>
+		<script src="../vendor/p5.js"></script>
 	</head>
 <body>
