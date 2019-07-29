@@ -131,17 +131,17 @@
 
 	<div class="container sr">
 		<div class="row" style="perspective: 100vw;">
-				<a href="#" class="col-xs-6 col-sm-3">
-					<img class="poster" src="../media/kopffreimachen.jpg">
+				<a href="../wissen104/" class="col-xs-6 col-sm-3">
+					<img class="poster" src="../wissen_components/media/kopffreimachen.jpg">
 				</a>
-				<a href="#" class="col-xs-6 col-sm-3">
-					<img class="poster" src="../media/grundsatzfragen.jpg">
+				<a href="../wissen101/" class="col-xs-6 col-sm-3">
+					<img class="poster" src="../wissen_components/media/grundsatzfragen.jpg">
 				</a>
-				<a href="#" class="col-xs-6 col-sm-3">
-					<img class="poster" src="../media/sonnenblumen.jpg">
+				<a href="../wissen103/" class="col-xs-6 col-sm-3">
+					<img class="poster" src="../wissen_components/media/sonnenblumen.jpg">
 				</a>
-				<a href="#" class="col-xs-6 col-sm-3">
-					<img class="poster" src="../media/franken.jpg">
+				<a href="../wissen102/" class="col-xs-6 col-sm-3">
+					<img class="poster" src="../wissen_components/media/franken.jpg">
 				</a>
 			</div>
 		</div>
@@ -149,7 +149,7 @@
 </div>
 <footer>
 	<div id="logo">
-		<img src="../media/logo.svg">
+		<img src="../wissen_components/media/logo.svg">
 	</div>
 </footer>
 
