@@ -30,9 +30,9 @@
 </section>
 </a>
 <main id="content">
-<div class="spacer" id="story"></div>
+<div class="spacer bg-dunkel" id="story"></div>
 
-<section class="story">
+<section class="story bg-dunkel">
 	<div class="container sr">
 		
 		<div class="row">
@@ -45,12 +45,14 @@
 	</div>	
 </section>
 
+<div class="spacer bg-dunkel" id="story"></div>
+
 <!-- <div class="spacer"></div>
 <hr>
 <div class="spacer"></div> -->
 
 <section id="sketch2" style="text-align: center;">
-	
+	<img src="<?php echo($responsive_v_img); ?>">
 </section>
 <section class="kurse" id="kurse">
 	<div class="container sr">

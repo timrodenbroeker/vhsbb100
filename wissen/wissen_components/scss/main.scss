@@ -29,4 +29,19 @@ body {
 		height: 1px;
 	}
 }
+
+.bg-dunkel{
+	background: #d0d6e0;
+}
+
+#sketch2 img {
+    display: none;
+}
+@media (max-width: 768px){
+	#sketch2 img {
+	    display: block;
+	    margin-top: 50px;
+	    margin-bottom: 30px;
+	}
+}
 	
