@@ -16,3 +16,17 @@ section {
 
 body {
 }
+
+.footerspacer{
+	display: block;
+	width: 100%;
+	height: 2px;
+}
+@media (min-width: 768px){
+	.footerspacer{
+		display: inline-block;
+		width: 30px;
+		height: 1px;
+	}
+}
+	

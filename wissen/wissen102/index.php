@@ -6,6 +6,20 @@
 	$motiv = "grundsatzfragen";
 
 	// =================================================================================================================================================================
+	// ========================================================== GRADIENT
+	// =================================================================================================================================================================
+
+	$gradient_r_von = 0;
+	$gradient_r_bis = 237;
+	$gradient_g_von = 109;
+	$gradient_g_bis = 51;
+	$gradient_b_von = 176;
+	$gradient_b_bis = 118;
+
+	// 006db0 = 0 109 176
+	// ed3376 = 237 51 118
+
+	// =================================================================================================================================================================
 	// ========================================================== VARIABLEN FÜR TEXTE
 	// =================================================================================================================================================================
 
@@ -23,7 +37,7 @@
 
 	// ========================================================== VARIABLEN FÜR KURS1
 	// ====================================================================================================================
-	$template_kurs1_hcolor 				= '#00984F';
+	$template_kurs1_hcolor 				= '#006db0';
 	$template_kurs1_headline 			= 'Wir und das Tier';
 	$template_kurs1_subheadline 		= 'Hier steht eine Subline';
 	$template_kurs1_beschreibungstext 	= 'Ob als geliebte Haustiere, gejagte Schädlinge oder verwertbare Nutztiere: In der Basler Stadtgesellschaft hatten Tiere unterschiedliche Funktionen. Ein Rundgang durch das Staatsarchiv beleuchtet das wechselhafte Verhältnis zwischen Mensch und Tier durch die Geschichte.';
@@ -32,7 +46,7 @@
 
 	// ========================================================== VARIABLEN FÜR KURS2
 	// ====================================================================================================================
-	$template_kurs2_hcolor 				= '#0D63A9';
+	$template_kurs2_hcolor 				= '#ed3376';
 	$template_kurs2_headline 			= 'Steuererklärung leicht gemacht';
 	$template_kurs2_subheadline 		= 'Hier steht eine Subline';
 	$template_kurs2_beschreibungstext 	= 'Als unselbständig Erwerbende/-r oder Rentner/-in können Sie nach dem Kurs die eigene Steuererklärung richtig ausfüllen und die vorgesehenen Abzüge optimal ausnützen. Der Kurs eignet sich v.a. für Teilnehmende aus dem Kt. Basel-Landschaft, die Erkenntnisse sind gut auf andere Kantone übertragbar.';

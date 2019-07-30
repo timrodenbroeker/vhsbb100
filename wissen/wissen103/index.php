@@ -6,6 +6,20 @@
 	$motiv = "grundsatzfragen";
 
 	// =================================================================================================================================================================
+	// ========================================================== GRADIENT
+	// =================================================================================================================================================================
+
+	$gradient_r_von = 219;
+	$gradient_r_bis = 231;
+	$gradient_g_von = 87;
+	$gradient_g_bis = 152;
+	$gradient_b_von = 51;
+	$gradient_b_bis = 41;
+
+	// db5733 = 219 87 51
+	// e79829 = 231 152 41
+
+	// =================================================================================================================================================================
 	// ========================================================== VARIABLEN FÜR TEXTE
 	// =================================================================================================================================================================
 
@@ -21,7 +35,7 @@
 
 	// ========================================================== VARIABLEN FÜR KURS1
 	// ====================================================================================================================
-	$template_kurs1_hcolor 				= '#00984F';
+	$template_kurs1_hcolor 				= '#db5733';
 	$template_kurs1_headline 			= 'Wie wollen wir leben?';
 	$template_kurs1_subheadline 		= 'Hier steht eine Subline';
 	$template_kurs1_beschreibungstext 	= 'Aufgabe der Raumplanung ist die Gestaltung der Orte, wo wir künftig leben, arbeiten und uns bewegen werden. Wie gelingt es, die Bedürfnisse und Wünsche kommender Generationen an den Lebensraum, die Mobilität und das Zusammenleben in Erfahrung zu bringen? Anhand aktueller Themen der Schweizer Raumplanung diskutieren wir diese Fragen und suchen auch im Rahmen einer Exkursion nach Antworten.';
@@ -30,7 +44,7 @@
 
 	// ========================================================== VARIABLEN FÜR KURS2
 	// ====================================================================================================================
-	$template_kurs2_hcolor 				= '#0D63A9';
+	$template_kurs2_hcolor 				= '#e79829';
 	$template_kurs2_headline 			= 'Brush Up Your English';
 	$template_kurs2_subheadline 		= 'Hier steht eine Subline';
 	$template_kurs2_beschreibungstext 	= 'Als wichtigste Lingua franca schlägt die englische Sprache Brücken zwischen den Kulturen und öffnet Türen auf der ganzen Welt. In \'Brush Up Your English\' repetieren Sie die wichtigsten grammatischen Regeln und erweitern Ihr Vokabular durch das Lesen von Zeitungsartikeln und Kurzgeschichten Sie lernen alltägliche Redewendungen kennen und erlangen mehr Sicherheit und Freiheit in der mündlichen Konversation.';

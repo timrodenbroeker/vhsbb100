@@ -6,6 +6,20 @@
 	$motiv = "grundsatzfragen";
 
 	// =================================================================================================================================================================
+	// ========================================================== GRADIENT
+	// =================================================================================================================================================================
+
+	$gradient_r_von = 140;
+	$gradient_r_bis = 219;
+	$gradient_g_von = 63;
+	$gradient_g_bis = 87;
+	$gradient_b_von = 135;
+	$gradient_b_bis = 51;
+
+	// 8c3f87 = 140 63 135
+	// db5733 = 219 87 51
+
+	// =================================================================================================================================================================
 	// ========================================================== VARIABLEN FÜR TEXTE
 	// =================================================================================================================================================================
 
@@ -23,7 +37,7 @@
 
 	// ========================================================== VARIABLEN FÜR KURS1
 	// ====================================================================================================================
-	$template_kurs1_hcolor 				= '#00984F';
+	$template_kurs1_hcolor 				= '#8c3f87';
 	$template_kurs1_headline 			= 'Psychologische Phänomene';
 	$template_kurs1_subheadline 		= 'Hier steht eine Subline';
 	$template_kurs1_beschreibungstext 	= 'Der Kurs bietet anregende Einblicke in die faszinierende Welt der Psychologie. Anhand klassischer Experimente der Psychologie und bekannter Effekte, die Ihnen im Alltag immer wieder begegnen, behandelt der Kurs grundlegende Themen verständlich, unterhaltsam und anschaulich. Sie erfahren, durch welche Phänomene das Denken, Handeln und Fühlen des Menschen beeinflusst werden.';
@@ -32,7 +46,7 @@
 
 	// ========================================================== VARIABLEN FÜR KURS2
 	// ====================================================================================================================
-	$template_kurs2_hcolor 				= '#0D63A9';
+	$template_kurs2_hcolor 				= '#db5733';
 	$template_kurs2_headline 			= 'Philosophieren in Tweets';
 	$template_kurs2_subheadline 		= 'Hier steht eine Subline';
 	$template_kurs2_beschreibungstext 	= 'Philosophen schreiben dicke Bücher? Das stimmt nicht immer. Nietzsche gilt nicht nur als Schlüsselfigur an der Wende zur philosophischen Moderne, sondern auch als Meister der Kürze und Konzentration. Wir lernen ihn, seine Philosophie und diese Form des Denkens in funkelnden Textjuwelen anhand von Beispielen aus seinen Schriften \'Jenseits von Gut und Böse\' und \'Götzendämmerung\' kennen. ';

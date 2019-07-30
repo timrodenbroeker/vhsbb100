@@ -59,7 +59,6 @@
 				<div class="kurs">
 					<div class="kurs-head">
 						<h3 style="color: <?php echo($template_kurs1_hcolor); ?>;" class="lead"><?php echo($template_kurs1_headline); ?></h3>
-						<h4><?php echo($template_kurs1_subheadline); ?></h4>
 					</div>
 
 					<p class="kurs-desc">
@@ -77,11 +76,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-sm-5 kurs-mobile-abstand">
 				<div class="kurs">
 					<div class="kurs-head">
 						<h3 style="color: <?php echo($template_kurs2_hcolor); ?>;" class="lead"><?php echo($template_kurs2_headline); ?></h3>
-						<h4><?php echo($template_kurs2_subheadline); ?></h4>
 					</div>
 
 					<p class="kurs-desc">
@@ -149,8 +147,21 @@
 </div>
 <footer>
 	<div id="logo">
-		<img src="../wissen_components/media/logo.svg">
+		<a href="https://www.vhsbb.ch/" target="_blank">
+			<img src="../wissen_components/media/logo.svg">
+		</a>
 	</div>
+
+	<div class="container m-top-40 p-bot-50" id="kontakt">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1" style="text-align: center;">
+				Tel.: 061 269 86 66 <div class="footerspacer"></div>
+				<a href="https://www.vhsbb.ch/" target="_blank">www.vhsbb.ch</a><div class="footerspacer"></div>
+				<a href="https://www.vhsbb.ch/impressum/" target="_blank">Impressum</a>
+			</div>
+		</div>
+	</div>
+
 </footer>
 
 </main>
