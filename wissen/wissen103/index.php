@@ -28,7 +28,7 @@
 	// ========================================================== VARIABLEN FÜR TEMPLATE_INTRO
 	// ====================================================================================================================
 	$template_intro_videorsc			= '../wissen_components/media/a.mp4';
-	$template_intro_text				= '<h2 class="serif">Sonnenblumen</h2>
+	$template_intro_text				= '<h2 class="serif">Sonnen&shy;blumen</h2>
 										<h2 class="sans">sind schlechte Vorbilder.</h2>';
 
 	// ========================================================== VARIABLEN FÜR TEMPLATE_STORY
@@ -65,6 +65,17 @@
 
 
 	include("../wissen_components/components/header.php");
+	?>
+
+	<style>
+		#preloader {
+			background: rgb(131, 58, 180);
+			background: linear-gradient(0deg, <?php echo $template_kurs1_hcolor; ?> 0%,  <?php echo $template_kurs2_hcolor; ?> 100%);
+		}
+	</style>
+
+	<?php 
+	
 	include("../wissen_components/components/preloader.php");
 	include("../wissen_components/components/template.php");
 	include("../wissen_components/components/footer.php") 

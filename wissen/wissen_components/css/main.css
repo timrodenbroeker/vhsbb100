@@ -1038,9 +1038,7 @@ body {
   z-index: 99999999;
   top: 100vh;
   transition: top 1s ease;
-  pointer-events: none;
-  background: #833ab4;
-  background: linear-gradient(0deg, #080094 0%, #38c7e4 36%, #09793c 100%); }
+  pointer-events: none; }
   #preloader.visible {
     top: 0; }
   #preloader .preloader-logo {
@@ -1181,7 +1179,8 @@ footer #logo {
   position: relative;
   z-index: 9999;
   margin-top: 90vh;
-  background: #f1f1f1; }
+  background: #833ab4;
+  background: linear-gradient(0deg, #f1f1f1 0%, #d0d6e0 100%); }
 
 #kurse h4 {
   margin-bottom: 10px; }
@@ -1375,7 +1374,7 @@ footer #logo {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff0000; }
+  background: #555555; }
 
 .flex-space-between {
   display: flex;
@@ -1397,9 +1396,23 @@ footer #logo {
   to {
     top: 0px; } }
 
+#responsiveV,
+#sketch2 {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
 @media (max-width: 768px) {
-  #sketch2 canvas {
+  #responsiveV {
+    display: flex; }
+  #sketch2 {
     display: none; } }
+
+@media (min-width: 768px) {
+  #responsiveV {
+    display: none; }
+  #sketch2 {
+    display: flex; } }
 
 @font-face {
   font-family: 'SuisseIntl';

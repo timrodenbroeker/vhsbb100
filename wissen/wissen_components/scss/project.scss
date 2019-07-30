@@ -1,10 +1,10 @@
 $primary: red;
 $secondary: blue;
-$fg: #d0d6e0;
-$bg: #000000;
 
+$fg: #d0d6e0;
 $white: #f1f1f1;
 
+$bg: #000000;
 $spaceDesktop: 100px;
 $spaceMobile: 50px;
 
@@ -22,9 +22,6 @@ $spaceMobile: 50px;
 	top: 100vh;
 	transition: top 1s ease;
 	pointer-events: none;
-
-	background: rgb(131, 58, 180);
-	background: linear-gradient(0deg, rgba(8, 0, 148, 1) 0%, rgba(56, 199, 228, 1) 36%, rgba(9, 121, 60, 1) 100%);
 
 	&.visible {
 		top: 0;
@@ -212,7 +209,10 @@ footer {
 	position: relative;
 	z-index: 9999;
 	margin-top: 90vh;
-	background: #f1f1f1;
+	// background: #f1f1f1;
+
+	background: rgb(131, 58, 180);
+	background: linear-gradient(0deg, $white 0%, $fg 100%);
 }
 
 // .kurs {
@@ -228,21 +228,20 @@ footer {
 .kurs-head {
 	min-height: 40px;
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
 	.kurs-head {
 		min-height: 90px;
 	}
 }
 
-.kurs-mobile-abstand{
+.kurs-mobile-abstand {
 	margin-top: 50px;
 }
-@media (min-width: 768px){
-	.kurs-mobile-abstand{
+@media (min-width: 768px) {
+	.kurs-mobile-abstand {
 		margin-top: 0px;
 	}
 }
-	
 
 .kurs-desc {
 	margin-bottom: 10px;
@@ -482,7 +481,7 @@ footer {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #ff0000;
+	background: #555555;
 }
 
 .flex-space-between {
@@ -511,10 +510,26 @@ footer {
 	animation-duration: 4s;
 }
 
+#responsiveV,
+#sketch2 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
 @media (max-width: 768px) {
+	#responsiveV {
+		display: flex;
+	}
 	#sketch2 {
-		canvas {
-			display: none;
-		}
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	#responsiveV {
+		display: none;
+	}
+	#sketch2 {
+		display: flex;
 	}
 }

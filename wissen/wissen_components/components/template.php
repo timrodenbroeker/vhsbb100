@@ -30,9 +30,11 @@
 </section>
 </a>
 <main id="content">
-<div class="spacer bg-dunkel" id="story"></div>
+<!-- <div class="spacer bg-dunkel" id="story"></div> -->
 
-<section class="story bg-dunkel">
+
+
+<section class="story grad" style="padding-top: 30px;"  id="story">
 	<div class="container sr">
 		
 		<div class="row">
@@ -43,17 +45,21 @@
 			</div>
 		</div>
 	</div>	
+	<!-- <div class="spacer"></div> -->
 </section>
 
-<div class="spacer bg-dunkel" id="story"></div>
+
 
 <!-- <div class="spacer"></div>
 <hr>
 <div class="spacer"></div> -->
 
 <section id="sketch2" style="text-align: center;">
-	<img src="<?php echo($responsive_v_img); ?>">
+	
 </section>
+
+<div id="responsiveV"></div>
+
 <section class="kurse" id="kurse">
 	<div class="container sr">
 		<div class="row">
@@ -157,9 +163,9 @@
 	<div class="container m-top-40 p-bot-50" id="kontakt">
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1" style="text-align: center;">
-				Tel.: 061 269 86 66 <div class="footerspacer"></div>
-				<a href="https://www.vhsbb.ch/" target="_blank">www.vhsbb.ch</a><div class="footerspacer"></div>
-				<a href="https://www.vhsbb.ch/impressum/" target="_blank">Impressum</a>
+				<div>Tel.: 061 269 86 66</div>
+				<div><a href="https://www.vhsbb.ch/" target="_blank">www.vhsbb.ch</a></div>
+				<div><a href="https://www.vhsbb.ch/impressum/" target="_blank">Impressum</a></div>
 			</div>
 		</div>
 	</div>

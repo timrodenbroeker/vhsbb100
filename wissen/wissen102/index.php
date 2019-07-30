@@ -66,7 +66,19 @@
 
 
 
-	include("../wissen_components/components/header.php");
+	include("../wissen_components/components/header.php");	
+	
+	?>
+
+		<style>
+			#preloader {
+				background: rgb(131, 58, 180);
+				background: linear-gradient(0deg, <?php echo $template_kurs1_hcolor; ?> 0%,  <?php echo $template_kurs2_hcolor; ?> 100%);
+			}
+		</style>
+
+	<?php 
+
 	include("../wissen_components/components/preloader.php"); 
 
 	include("../wissen_components/components/template.php");
